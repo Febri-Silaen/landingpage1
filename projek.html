@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-TFfS8m89yBvVh21eF5k3uXICc60CBNv9NTVlXyo4n4gE8gZdGlGkVZmqPjO/Kvt6W8+Mf3AY9x4LHifv4pJ8AA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #3d054e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .navbar{
+    margin-bottom: 150%;
+    margin-right: -40px;
+    font-size: 20px;
+    padding: 20px;
+    
+  }
+  
+  .container {
+    max-width: 360px;
+    width: 90%;
+    margin-right: 20px;
+    
+   
+  }
+  
+  .login-box {
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    padding: 60px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .logo i {
+    font-size: 2rem;
+    color: #46ca25;
+  }
+  
+  .logo h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-left: 10px;
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  .input-group {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  input:focus {
+    border-color: #e1306c;
+  }
+  
+  input:focus + label {
+    top: -10px;
+    color: #e1306c;
+  }
+  
+  label {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    color: #999;
+    transition: 0.3s;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #36e130;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #800a31;
+  }
+  
+  p {
+    color: #999;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  p:hover {
+    color: #b41111; 
+  }
+
+ </style>
+</head>
+<body>
+  <div class="navbar">
+    <a href="index.html">kembali</a>
+  </div>
+
+  <div class="container">
+    <div class="login-box">
+      <div class="logo">
+        <i class="fab fa-instagram-square"></i> 
+        <h2>Login</h2>
+      </div>
+      <form>
+        <div class="input-group">
+          <input type="text" id="username" required>
+          <label for="username">Username</label>
+        </div>
+        <div class="input-group">
+          <input type="password" id="password" required>
+          <label for="password">Password</label>
+        </div>
+        <button type="submit">Log In</button>
+        <p>Forgot password?</p>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
